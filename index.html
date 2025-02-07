@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buscar Anime</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="icon" href="ic.webp" type="image/png">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1><strong>Buscar Anime</strong></h1>
+      <div class="barrainfo">
+        <p>Você sente vontade de assistir algum anime?</p>
+        <p>Este site permite buscar animes por nome ou sugerir novos animes baseados em gêneros de interesse.</p>
+      </div>
+    </header>
+
+    <div class="img">
+      <img src="anime.jpg" alt="Ilustração de anime">
+    </div>
+
+    <!-- Barra de pesquisa -->
+    <div class="search-container">
+      <input type="text" id="search-input" class="search-input" placeholder="Pesquise por um gênero ou anime..." aria-label="Barra de pesquisa">
+      <button class="search-btn" aria-label="Botão de pesquisa">Pesquisar</button>
+    </div>
+
+    <!-- Botões de gêneros -->
+    <div class="genres-container">
+      <button class="genre-btn" data-genre="1">Ação</button>
+      <button class="genre-btn" data-genre="2">Aventura</button>
+      <button class="genre-btn" data-genre="3">Comédia</button>
+      <button class="genre-btn" data-genre="4">Drama</button>
+      <button class="genre-btn" data-genre="5">Fantasia</button>
+      <button class="genre-btn" data-genre="6">Jogos</button>
+      <button class="genre-btn" data-genre="7">Mistério</button>
+      <button class="genre-btn" data-genre="8">Psicológico</button>
+      <button class="genre-btn" data-genre="9">Romance</button>
+      <button class="genre-btn" data-genre="10">Terror</button>
+      <button class="genre-btn" data-genre="11">Slice of Life</button>
+      <button class="genre-btn" data-genre="12">Escolar</button>
+      <button class="genre-btn" data-genre="13">Sci-Fi</button>
+      <button class="genre-btn" data-genre="14">Histórico</button>
+      <button class="genre-btn" data-genre="15">Música</button>
+      <button class="genre-btn" data-genre="16">Superpoderes</button>
+      <button class="genre-btn" data-genre="17">Sobrenatural</button>
+      <button class="genre-btn" data-genre="18">Magia</button>
+      <button class="genre-btn" data-genre="19">Ecchi</button>
+      <button class="genre-btn" data-genre="21">Mecha</button>
+      <button class="genre-btn" data-genre="22">Cyberpunk</button>
+      <button class="genre-btn" data-genre="23">Vampiros</button>
+      <button class="genre-btn" data-genre="24">Seinen</button>
+      <button class="genre-btn" data-genre="25">Shounen</button>
+      <button class="genre-btn" data-genre="26">Shoujo</button>
+      <button class="genre-btn" data-genre="27">Josei</button>
+      <button class="genre-btn" data-genre="28">Culinária</button>
+      <button class="genre-btn" data-genre="29">Gore</button>
+      <button class="genre-btn" data-genre="30">Yaoi</button>
+    </div>
+
+    <!-- Gêneros selecionados -->
+    <div class="selected-genres">
+      <h2>Gêneros Selecionados:</h2>
+      <p id="selected-list">Nenhum gênero selecionado</p>
+      <!-- Botão para redirecionar para AnimesOnlineCC -->
+<button class="redirect-btn" id="redirect-btn">Assistir animes</button>
+    </div>
+ 
+    <!-- Resultados -->
+    <div id="results-container" class="results-container"></div>
+
+    <!-- Carregamento -->
+    <div id="loading" class="loading" aria-hidden="true">Carregando...</div>
+
+  
+    <!-- Botão de limpar -->
+    <button class="back-btn" aria-label="Limpar busca e gêneros">Limpar</button>
+  </div>
+
+  <footer>
+    <p>Desenvolvido por [Luís Gustavo Macedo Custódio] © 2025</p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
