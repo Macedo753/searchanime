@@ -168,6 +168,13 @@ document.addEventListener("DOMContentLoaded", () => {
     window.location.href = 'https://animesonlinecc.to/';  // URL do AnimesOnlineCC
   });
 
+  // Adicionando evento de pressionamento de tecla no campo de pesquisa (Enter)
+  searchInput.addEventListener('keydown', function(event) {
+    if (event.key === 'Enter') {
+      searchAnime();
+    }
+  });
+
   // Eventos
   genreButtons.forEach(button => button.addEventListener('click', toggleGenreSelection));
   searchButton.addEventListener('click', searchAnime);
