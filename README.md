@@ -1,4 +1,4 @@
-# 🎌 Anime Finder - Buscador de Animes
+# 🎌 Search Anime- Buscador de Animes
 
 Este é um site que permite buscar animes por **nome** ou **gênero** utilizando múltiplas APIs. Basta inserir o nome do anime ou selecionar um gênero e clicar em **Pesquisar** para obter os resultados.
 
