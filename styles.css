@@ -185,6 +185,7 @@ h1 strong {
 .back-btn:hover {
   background-color: #ddd;
 }
+
 #loading {
   display: none; /* Inicialmente escondido */
   text-align: center;
@@ -194,6 +195,7 @@ h1 strong {
   color: white;
   border-radius: 5px;
 }
+
 .reload-btn {
   padding: 10px 20px;
   background-color: #2196F3;
@@ -209,6 +211,7 @@ h1 strong {
 .reload-btn:hover {
   background-color: #1976D2;
 }
+
 /* Estilo para o botão de redirecionamento */
 .redirect-btn {
   position: fixed;
@@ -231,12 +234,50 @@ h1 strong {
 }
 
 /* Responsividade para telas menores */
+@media (max-width: 1024px) {
+  .results-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas em telas médias */
+  }
+}
+
 @media (max-width: 768px) {
   .redirect-btn {
     bottom: 10px;
     right: 10px;
     padding: 8px 15px;
     font-size: 14px;
+  }
+
+  .container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .search-container {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .search-input {
+    width: 100%; /* Faz o input ocupar toda a largura */
+  }
+
+  .search-btn {
+    width: 100%; /* Faz o botão ocupar toda a largura */
+  }
+
+  .genres-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .genre-btn {
+    width: 80%;
+    text-align: center;
+  }
+
+  .img img {
+    max-width: 90%;
   }
 }
 
@@ -246,5 +287,9 @@ h1 strong {
     right: 5px;
     padding: 6px 12px;
     font-size: 12px;
+  }
+
+  .results-container {
+    grid-template-columns: repeat(1, 1fr); /* 1 coluna em telas pequenas */
   }
 }
